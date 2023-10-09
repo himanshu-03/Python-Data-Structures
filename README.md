@@ -1,18 +1,7 @@
 # Python-Data-Structures
 A compilation of Data Structures in Python. It is a collection of Python code examples and implementations of various data structures. This repository aims to provide a comprehensive resource for understanding and utilizing different data structures efficiently in Python.
 
-# Contributing Guidelines
-- Fork this repository
-- Clone your forked copy of the project to local system using `git clone https://github.com/<your_username>/Python-Data-Structures`
-- Adding New Data Strcture
-    1. Create a folder named by the data structure
-    2. Create `.py` file for a particular algorithm or technique
-- If data structure folder already exist, kindly add your code in the respective folder
-- After you have modified your code commit chnages using `git add .`<br/>
-`git commit -m "Add a new data structure: DataStructureName"`
-- Push changes to github repo using `git push`
-- Create a Pull request with suitable title and explanation of your changes
-
+### [Contributing Guidelines](CONTRIBUTING.md)
 
 ## 🪪 License
 
