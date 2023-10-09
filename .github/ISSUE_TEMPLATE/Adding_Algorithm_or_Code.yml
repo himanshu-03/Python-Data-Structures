@@ -1,12 +1,12 @@
 name: Adding Algorithm/Code
 description: Adding any Algorithm/Code in Python
 title: "add: <title>"
-labels: ["algorithm", "good-first-issue"]
+labels: ["good-first-issue"]
 body:
   - type: textarea
     attributes:
-      label: Describe the improvement
-      description: Provide a clear and concise description of what the problem is and how we should solved that.
+      label: Describe the algorithm/code
+      description: Provide a clear and concise description of what you are going to implement.
     validations:
       required: true
   - type: checkboxes
