@@ -1,7 +1,9 @@
 # Python-Data-Structures
 A compilation of Data Structures in Python. It is a collection of Python code examples and implementations of various data structures. This repository aims to provide a comprehensive resource for understanding and utilizing different data structures efficiently in Python.
 
-### [Contributing Guidelines](CONTRIBUTING.md)
+### Please read our [Contributing Guidelines](CONTRIBUTING.md) before contributing or starting with an issue.
+
+> Make sure you are following all the steps given in the [Guidelines](CONTRIBUTING.md) for faster acceptance of your PR.
 
 ## 🪪 License
 

@@ -64,10 +64,10 @@ You can contribute by:
 5. Adding New Data Strcture
    
     - Create a folder named by the Data Structure
-    - Create `.py` file for a particular algorithm or technique
+    - Create `.py` file for a particular algorithm or code
     <br />
     
-    > If data structure folder already exists, kindly add your code in the respective folder
+    > If data structure folder already exists inside subfolder, kindly add your code in the respective folder
    
 6. Add all the changes that you have made
    
