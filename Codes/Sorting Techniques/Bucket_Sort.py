@@ -23,7 +23,7 @@ def bucketSort(array):
             k += 1
     return array
 
-
-array = [.42, .32, .33, .52, .37, .47, .51]
+user_input = input("Enter a list of elements to be sorted, separated by spaces: ")
+array = [int(x) for x in user_input.split()]
 print("Sorted Array in descending order is")
 print(bucketSort(array))
