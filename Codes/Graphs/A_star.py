@@ -1,11 +1,11 @@
 from collections import defaultdict
 
 class Graph:
-    def __init__(self):
+    def __init(self):
         self.graph = defaultdict(list)
 
-    def add_edge(self, u, v):
-        self.graph[u].append(v)
+    def add_edge(self, u, v, cost=1):
+        self.graph[u].append((v, cost))
 
     def bfs(self, start_node):
         visited = [False] * (max(self.graph) + 1)
@@ -19,9 +19,10 @@ class Graph:
             print(node, end=" ")
 
             for neighbor in self.graph[node]:
-                if not visited[neighbor]:
-                    queue.append(neighbor)
-                    visited[neighbor] = True
+                neighbor_node, _ = neighbor
+                if not visited[neighbor_node]:
+                    queue.append(neighbor_node)
+                    visited[neighbor_node] = True
 
 class Node():
     def __init__(self, state, parent, action, heuristic, cost):
@@ -78,7 +79,6 @@ class a_starFrontier(StackFrontier):
             self.frontier.remove(node)
             return node
 
-# Create a new class that extends the Graph class for A* search
 class AStarGraph(Graph):
     def a_star(self, start_node, goal_node):
         visited = [False] * (max(self.graph) + 1)
@@ -101,11 +101,11 @@ class AStarGraph(Graph):
 
             visited[state] = True
 
-            for neighbor in self.graph[state]:
+            for neighbor, cost in self.graph[state]:
                 if not visited[neighbor]:
-                    cost = node.cost + 1  # Assuming unit cost for simplicity
+                    new_cost = node.cost + cost
                     heuristic = self.manhattan(neighbor, goal_node)
-                    neighbor_state = Node(neighbor, node, None, heuristic, cost)
+                    neighbor_state = Node(neighbor, node, None, heuristic, new_cost)
                     frontier.add(neighbor_state)
 
         return None
@@ -115,18 +115,24 @@ class AStarGraph(Graph):
         x2, y2 = goal_node % 3, goal_node // 3
         return abs(x1 - x2) + abs(y1 - y2)
 
-# Example usage:
+# Example usage with user input:
 a_star_graph = AStarGraph()
-a_star_graph.add_edge(0, 1)
-a_star_graph.add_edge(0, 2)
-a_star_graph.add_edge(1, 2)
-a_star_graph.add_edge(2, 0)
-a_star_graph.add_edge(2, 3)
-a_star_graph.add_edge(3, 3)
 
-goal_node = 3
-print("A* search starting from node 2 to reach node 3:")
-path = a_star_graph.a_star(2, goal_node)
+# Get user input for defining the graph
+while True:
+    u = int(input("Enter edge source node (or -1 to stop): "))
+    if u == -1:
+        break
+    v = int(input("Enter edge target node: "))
+    cost = int(input("Enter edge cost: "))
+    a_star_graph.add_edge(u, v, cost)
+
+# Get user input for the start and goal nodes
+start_node = int(input("Enter the start node: "))
+goal_node = int(input("Enter the goal node: "))
+
+print(f"A* search starting from node {start_node} to reach node {goal_node}:")
+path = a_star_graph.a_star(start_node, goal_node)
 if path:
     print("Path:", path)
 else:

@@ -90,18 +90,23 @@ class GBFSGraph:
         x2, y2 = goal_node % 3, goal_node // 3
         return abs(x1 - x2) + abs(y1 - y2)
 
-# Example usage:
+# Example usage with user input:
 gbfs_graph = GBFSGraph()
-gbfs_graph.add_edge(0, 1)
-gbfs_graph.add_edge(0, 2)
-gbfs_graph.add_edge(1, 2)
-gbfs_graph.add_edge(2, 0)
-gbfs_graph.add_edge(2, 3)
-gbfs_graph.add_edge(3, 3)
 
-goal_node = 3
-print("GBFS starting from node 2 to reach node 3:")
-path = gbfs_graph.gbfs(2, goal_node)
+# Get user input for defining the graph
+while True:
+    u = int(input("Enter edge source node (or -1 to stop): "))
+    if u == -1:
+        break
+    v = int(input("Enter edge target node: "))
+    gbfs_graph.add_edge(u, v)
+
+# Get user input for the start and goal nodes
+start_node = int(input("Enter the start node: "))
+goal_node = int(input("Enter the goal node: "))
+
+print(f"GBFS starting from node {start_node} to reach node {goal_node}:")
+path = gbfs_graph.gbfs(start_node, goal_node)
 if path:
     print("Path:", path)
 else:
