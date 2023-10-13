@@ -1,4 +1,7 @@
 <div id="top"></div>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Python-Data-Structures
 Here' an amazing repo regarding <b><i> data structure using python.</i></b> This is a compilation of <em>python codes examples and implementations</em> of various concepts of data structure. It comprises of various resources for efficient understanding and utilizion of data structure in python.
@@ -55,6 +58,21 @@ This project follows the [MIT LICENSE](https://choosealicense.com/licenses/mit/)
 ## Contributors ✨
 
 <a href="https://github.com/himanshu-03/Python-Data-Structures/graphs/contributors">
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mahitej28"><img src="https://avatars.githubusercontent.com/u/98276915?v=4?s=100" width="100px;" alt="Mahima Churi"/><br /><sub><b>Mahima Churi</b></sub></a><br /><a href="https://github.com/himanshu-03/Python-Data-Structures/commits?author=Mahitej28" title="Documentation">📖</a> <a href="https://github.com/himanshu-03/Python-Data-Structures/commits?author=Mahitej28" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
   <img src="https://contrib.rocks/image?repo=himanshu-03/python-data-structures" />
 </a>
 
