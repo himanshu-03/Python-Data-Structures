@@ -14,39 +14,41 @@ You can find our Contributing Guidelines [here](CONTRIBUTING.md).
 
 <details>
    <summary><h3>Getting started 🤟</h3></summary>
-1. Fork this repo (button on top).
-2. Clone on your local machine.
-    ```
-    git clone https://github.com/himanshu-03/Python-Data-Structures.git
-    ```
-3. Navigate to the project directory.
-    ```
-    cd Python-Data-Structures
-    ```
-4. Create a new *branch*
-    ```
-    git checkout -b <branch-name>
-    ```
-5. Adding New Data Strcture
+
+   1. Fork this repo (button on top).
    
-    - Create a folder named by the Data Structure
-    - Create `.py` file for a particular algorithm or code
-    <br />
-    
-    > If data structure folder already exists in the repo, kindly add your code in the respective folder.
-6. Add all the changes that you have made
-   ```
-   git add .
-   ```
-7. Commit your changes
-    ```
-    git commit -m "{Message}"
-    ```
-8. Then push
-    ```
-    git push -u origin <branch-name>
-    ```
-9. Submit a pull request :sunglasses:
+   2. Clone on your local machine.
+       ```
+       git clone https://github.com/himanshu-03/Python-Data-Structures.git
+       ```
+   3. Navigate to the project directory.
+       ```
+       cd Python-Data-Structures
+       ```
+   4. Create a new *branch*
+       ```
+       git checkout -b <branch-name>
+       ```
+   5. Adding New Data Strcture
+      
+       - Create a folder named by the Data Structure
+       - Create `.py` file for a particular algorithm or code
+       <br />
+       
+       > If data structure folder already exists in the repo, kindly add your code in the respective folder.
+   6. Add all the changes that you have made
+      ```
+      git add .
+      ```
+   7. Commit your changes
+       ```
+       git commit -m "{Message}"
+       ```
+   8. Then push
+       ```
+       git push -u origin <branch-name>
+       ```
+   9. Submit a pull request :sunglasses:
 </details>
 
 ## 🪪 License
