@@ -67,7 +67,7 @@ You can contribute by:
     - Create `.py` file for a particular algorithm or code
     <br />
     
-    > If data structure folder already exists inside subfolder, kindly add your code in the respective folder
+    > If data structure folder already exists in the repo, kindly add your code in the respective folder.
    
 6. Add all the changes that you have made
    
