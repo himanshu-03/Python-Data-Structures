@@ -51,11 +51,22 @@ def fibonacciSearch(array, target, n):
     return -1
 
 if __name__ == "__main__":
-    array = [5, 6, 7, 8, 17, 19, 20, 21, 23, 34, 67, 97, 675]
-    n = len(array)
-    target = 31
+    n = int(input("\nEnter number of elements in the array: "))
+    array = []
+    print('\n')
+    for i in range(n):
+        array.append(int(input(f"Enter element {i+1}: ")))
+    array.sort()
+    target = int(input("\nEnter target element: "))
+
     index = fibonacciSearch(array, target, n)
+
+    print('\nEntered elements are: ', end='')
+    for i in range(n):
+        print(array[i], end=' ')
+    print('\n')
+
     if index != -1:
-        print(target, "is present at index:", index)
+        print(f"\n{target} is present at index: {index}\n")
     else:
-        print(target, "isn't present in the array")
+        print(f"\n{target} isn't present in the array.\n")
