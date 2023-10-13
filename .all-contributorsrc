@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Mahitej28",
+      "name": "Mahima Churi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98276915?v=4",
+      "profile": "https://github.com/Mahitej28",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "Python-Data-Structures",
+  "projectOwner": "himanshu-03"
+}
