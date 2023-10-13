@@ -1,39 +1,49 @@
-# Create a graph given in the above diagram.
-graph = {
-    'A': ['B', 'C', 'D'],
-    'B': ['A'],
-    'C': ['A', 'D'],
-    'D': ['A', 'C', 'E'],
-    'E': ['D'],
-}
+# Initialize an empty graph
+graph = {}
 
-# to print a BFS of a graph
-def bfs(node):
+# Function to add an edge to the graph
+def add_edge(graph, u, v):
+    if u in graph:
+        graph[u].append(v)
+    else:
+        graph[u] = [v]
 
-    # mark vertices as False means not visited
-    visited = [False] * (len(graph))
+# Function to print a BFS of a graph
+def bfs(graph, start_node):
+    if start_node not in graph:
+        print("Start node not found in the graph.")
+        return
 
-    # make an empty queue for bfs
+    # Mark vertices as False means not visited
+    visited = {node: False for node in graph}
+
+    # Make an empty queue for BFS
     queue = []
 
-    # mark gave node as visited and add it to the queue
-    visited.append(node)
-    queue.append(node)
+    # Mark the given start node as visited and add it to the queue
+    visited[start_node] = True
+    queue.append(start_node)
 
     while queue:
-        # Remove the front vertex or the vertex at the 0th index from the queue and print that vertex.
+        # Remove the front vertex (or the vertex at the 0th index) from the queue and print it.
         v = queue.pop(0)
         print(v, end=" ")
 
-        # Get all adjacent nodes of the removed node v from the graph hash table.
-        # If an adjacent node has not been visited yet,
-        # then mark it as visited and add it to the queue.
+        # Get all adjacent nodes of the removed node v from the graph dictionary.
+        # If an adjacent node has not been visited yet, mark it as visited and add it to the queue.
         for neigh in graph[v]:
-            if neigh not in visited:
-                visited.append(neigh)
+            if not visited[neigh]:
+                visited[neigh] = True
                 queue.append(neigh)
 
+# Input from the user to create the graph
+while True:
+    u = input("Enter the source node (or 'quit' to finish): ")
+    if u == 'quit':
+        break
+    v = input(f"Enter the destination node(s) for node {u} (comma-separated): ")
+    for dest in v.split(','):
+        add_edge(graph, u, dest)
 
-# Driver Code
-if __name__ == "__main__":
-    bfs('A')
+start_node = input("Enter the start node for BFS: ")
+bfs(graph, start_node)
