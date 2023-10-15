@@ -1,10 +1,10 @@
 <div id="top"> </div>
 
-# Python-Data-Structures
+# Python Data Structures
 Here' an amazing repo regarding <b><i> data structure using python.</i></b> This is a compilation of <em>python codes examples and implementations</em> of various concepts of data structure. It comprises of various resources for efficient understanding and utilizion of data structure in python.
 <br/>
 
-## Mandatory‼️
+## Mandatory ‼️
 
    1. You need to create an issue first and wait till you are assigned the issue before creating a Pull Request.
    2. Give a proper description about your proposed and implemented changes in your issues and pull requests.
