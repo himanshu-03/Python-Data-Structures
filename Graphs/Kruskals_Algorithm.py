@@ -91,14 +91,28 @@ class KruskalMST:
         return result
 
 
-# Example usage:
-g = KruskalMST(4)
-g.add_edge(0, 1, 10)
-g.add_edge(0, 2, 6)
-g.add_edge(0, 3, 5)
-g.add_edge(1, 3, 15)
-g.add_edge(2, 3, 4)
-mst = g.kruskal()
-print("Edges in Minimum Spanning Tree:")
-for u, v, w in mst:
-    print(f"{u} - {v}: {w}")
+def main():
+    """
+    Main function to execute the Kruskal's algorithm for finding the Minimum Spanning Tree.
+
+    The function prompts the user for input regarding the number of vertices, number of edges, and edge details.
+    It then prints the edges of the Minimum Spanning Tree.
+    """
+    num_vertices = int(input("Enter the number of vertices: "))
+    g = KruskalMST(num_vertices)
+
+    num_edges = int(input("Enter the number of edges: "))
+    for _ in range(num_edges):
+        u, v, w = map(int, input("Enter edge (u v w): ").split())
+        g.add_edge(u, v, w)
+
+    mst = g.kruskal()
+
+    print("Edges in Minimum Spanning Tree:")
+    for u, v, w in mst:
+        print(f"{u} - {v}: {w}")
+
+
+if __name__ == "__main__":
+    main()
+
