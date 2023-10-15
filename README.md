@@ -1,4 +1,4 @@
-<div id="top"></div>
+<div id="top"> </div>
 
 # Python-Data-Structures
 Here' an amazing repo regarding <b><i> data structure using python.</i></b> This is a compilation of <em>python codes examples and implementations</em> of various concepts of data structure. It comprises of various resources for efficient understanding and utilizion of data structure in python.
