@@ -2,7 +2,6 @@
 # Menu Driven Code for Tries also known as a prefix tree, a tree-like data structure 
 used for efficient retrieval of a key in a dataset of strings. 
 """
-
 class TrieNode:
     def __init__(self):
         self.children = {}
@@ -38,13 +37,22 @@ class Trie:
 
 # Example usage
 trie = Trie()
-words = ["apple", "banana", "orange", "app", "ban", "or"]
-for word in words:
-    trie.insert(word)
 
-print(trie.search("apple"))  # True
-print(trie.search("appl"))  # False
-print(trie.starts_with("app"))  # True
-print(trie.search("ban"))  # True
-print(trie.search("banana"))  # True
-print(trie.search("band"))  # False
+# Dynamic input for words
+while True:
+    user_input = raw_input("Enter a word (or 'q' to quit): ")  # Use raw_input for Python 2.x
+    if user_input == 'q':
+        break
+    trie.insert(user_input)
+
+# Dynamic input for searching
+while True:
+    user_input = raw_input("Enter a word to search (or 'q' to quit): ")  # Use raw_input for Python 2.x
+    if user_input == 'q':
+        break
+    if trie.search(user_input):
+        print("'{0}' is found in the trie.".format(user_input))
+    else:
+        print("'{0}' is not found in the trie.".format(user_input))
+
+
