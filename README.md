@@ -56,8 +56,8 @@ This project follows the [MIT LICENSE](https://choosealicense.com/licenses/mit/)
 
 ## Contributors ✨
 
-<a href="https://github.com/himanshu-03/Python-Data-Structures/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=himanshu-03/Python-Data-Structures" />
+<a href = "https://github.com/himanshu-03/Python-Data-Structures/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=himanshu-03/Python-Data-Structures"/>
 </a>
 
 <div align="center">
