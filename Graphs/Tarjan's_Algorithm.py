@@ -2,7 +2,7 @@
  is a dictionary-like container from the collections
 module that provides a default value for keys that do not exist."""
 
-from collections import defaultdict 
+from collections import defaultdict
 
 # Function to run Tarjan's algorithm
 def tarjan(graph):
@@ -28,16 +28,16 @@ def tarjan(graph):
         try:
             successors = graph[node]
         except:
-            
+
             successors = []
         for successor in successors:
             if successor not in indexes:
                 # Successor has not yet been visited; recurse on it
                 strongconnect(successor)
-                lowlinks[node] = min(lowlinks[node],lowlinks[successor])
+                lowlinks[node] = min(lowlinks[node], lowlinks[successor])
             elif successor in stack:
-                # Successor is in stack, hence in current SCC
-                lowlinks[node] = min(lowlinks[node],indexes[successor])
+                # Successor is in the stack, hence in the current SCC
+                lowlinks[node] = min(lowlinks[node], indexes[successor])
 
         # If `node` is a root node, pop the stack and generate an SCC
         if lowlinks[node] == indexes[node]:
@@ -46,7 +46,8 @@ def tarjan(graph):
             while True:
                 successor = stack.pop()
                 connected_component.append(successor)
-                if successor == node: break
+                if successor == node:
+                    break
             components.append(connected_component)
 
     for node in graph:
@@ -55,18 +56,17 @@ def tarjan(graph):
 
     return components
 
-# Sample graph
-graph = {
-  0: [1],
-  1: [2], 
-  2: [0, 3], 
-  3: [4],
-  4: [5],
-  5: [3, 6],
-  6: []
-}
+# Accept dynamic input for the graph
+graph = defaultdict(list)
+num_nodes = int(input("Enter the number of nodes: "))
+for i in range(num_nodes):
+    node = int(input(f"Enter the successors of node {i}: "))
+    successors = list(map(int, input().split()))
+    graph[node] = successors
 
+print("Strongly Connected Components:")
 print(tarjan(graph))
+
 
 
 """ Explanation:->
