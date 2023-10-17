@@ -16,7 +16,7 @@ def search(pat, txt):
 			if (txt[i + j] != pat[j]):
 				break
 			j += 1
-
+   
 		if (j == M):
 			print("Pattern found at index ", i)
 
@@ -27,10 +27,13 @@ if __name__ == '__main__':
 	pat = "AABA"
 	
 	# Function call
+	print('Below iis an` example of Naive Pattern Searching Algorithm\n')
+	print('It is being implemented for the following text and pattern: \n')
+	print('	Text = "AABAACAADAABAAABAA" pattern = "AABA"')
+ 
 	search(pat, txt)
     #try it yourself
+	print('\nNow try it yourself\n')
 	txt = input("Enter the text: ")
 	pat = input("Enter the pattern: ")
-	
-
 	search(pat, txt)
