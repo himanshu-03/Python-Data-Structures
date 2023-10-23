@@ -57,13 +57,14 @@ def floydWarshall(graph):
 
                 # If vertex k is on the shortest path from
                 # i to j, then update the value of dist[i][j]
-            dist[i][j] = min(dist[i][j],
-                             dist[i][k] + dist[k][j]
-                             )
+                dist[i][j] = min(dist[i][j],
+                                 dist[i][k] + dist[k][j]
+                                 )
     printSolution(dist)
 
-
 # A utility function to print the solution
+
+
 def printSolution(dist):
     print("Following matrix shows the shortest distances\
 between every pair of vertices")
