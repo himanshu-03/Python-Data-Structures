@@ -1,8 +1,7 @@
 """The Bisection Method:
-The method is based on The Intermediate Value Theorem 
-which states that if f(x) is a continuous function 
-and there are two real numbers a and b such that f(a)*f(b) < 0, 
-then it is guaranteed that it has at least one root between them.
+This method is used to find the roots of a continuous equation 
+such that the interval [a, b] is provided by the user.
+And, f(a)*f(b) < 0 
 
 for more reference (https://www.geeksforgeeks.org/program-for-bisection-method/)
 """
