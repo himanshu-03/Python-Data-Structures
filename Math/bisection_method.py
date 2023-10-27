@@ -2,6 +2,7 @@
 This method is used to find the roots of a continuous equation 
 such that the interval [a, b] is provided by the user.
 And, f(a)*f(b) < 0 
+It is based on the principle of Intermediate Value Theorm.
 
 for more reference (https://www.geeksforgeeks.org/program-for-bisection-method/)
 """
