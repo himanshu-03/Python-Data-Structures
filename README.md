@@ -60,9 +60,6 @@ This project follows the [MIT LICENSE](https://choosealicense.com/licenses/mit/)
   <img src = "https://contrib.rocks/image?repo=himanshu-03/Python-Data-Structures"/>
 </a>
 
-## 🪪 License
-This project follows the [MIT LICENSE](https://choosealicense.com/licenses/mit/).
-
 <br />
 
 <div align="center">
